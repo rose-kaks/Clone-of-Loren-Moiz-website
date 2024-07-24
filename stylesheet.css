@@ -1,0 +1,82 @@
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    position: sticky;
+    top: 0; 
+    background-color: white; /* Add a background color to avoid transparency issues */
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+.header span {
+    flex: 1;
+    text-align: left;
+}
+
+.tabs {
+    flex: 2;
+    display: flex;
+    overflow: hidden;
+}
+
+.tablink {
+    display: inline-block;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0 5px;
+    color: black;
+}
+
+.tablink:hover {
+    background-color: #d3c8c8;
+}
+
+.content {
+    display: none;
+    padding: 10px;
+    border-top: none;
+}
+
+#home:target,
+#shop:target,
+#about:target,
+#contact:target {
+    display: block;
+}
+
+.default {
+    display: block;
+}
+
+#bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+#bar span {
+    flex: 1;
+    text-align: left;
+}
+
+.view-all-button {
+    font-size: x-large;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.view-all-button:hover{
+    background-color: lightgray;
+    transform: scale(1.1);
+}
